@@ -42,7 +42,7 @@ public abstract class BaseMarshaller<T> implements Marshaller<T> {
 	      return "null";
 	    }
 	    final boolean ref = a1.hasObject(a0);
-	    final StringBuilder json = new StringBuilder("{\"^EncodedType\":\"com.blinco.report.api.row.ReportRenderTypeRow\",\"^ObjectID\"");
+	    final StringBuilder json = new StringBuilder("{\"^EncodedType\":\""+ clazz.getName() + "\",\"^ObjectID\"");
 	    json.append(":\"").append(a1.getObject(a0)).append("\"");
 	    if (ref) {
 	      return json.append("}").toString();

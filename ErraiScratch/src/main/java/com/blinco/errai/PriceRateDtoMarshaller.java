@@ -1,5 +1,7 @@
 package com.blinco.errai;
 
+import javax.annotation.Generated;
+
 import org.jboss.errai.marshalling.client.Marshalling;
 import org.jboss.errai.marshalling.client.api.Marshaller;
 import org.jboss.errai.marshalling.client.api.MarshallingSession;
@@ -8,10 +10,12 @@ import org.jboss.errai.marshalling.client.api.json.EJValue;
 
 /**
  * This marshaller could *ideally* be generated from an annotation processor.
+ * This leverages the Reflect object to be able to cycle through the properties
  * 
  * @author joshblinick
  *
  */
+@Generated("From ...")
 public class PriceRateDtoMarshaller extends BaseMarshaller<PriceRateDto> {
 
 	public PriceRateDtoMarshaller() {
@@ -67,7 +71,6 @@ public class PriceRateDtoMarshaller extends BaseMarshaller<PriceRateDto> {
 
 	@Override
 	void lazyInit() {
-		// TODO Auto-generated method stub
 		
 	}
 }

@@ -4,6 +4,14 @@ import java.util.List;
 
 import org.jboss.errai.databinding.client.BindableProxy;
 
+/**
+ * Another interface that all BindableProxyImpl should extend.  This will allow the impl
+ * to leverage the ReflectionOf objects for getting/setting to cut down on code
+ * 
+ * @author joshblinick
+ *
+ * @param <B>
+ */
 public interface BaseBindableProxy<B> extends BindableProxy<B> {
 
 	public ReflectionOf<B> reflect();

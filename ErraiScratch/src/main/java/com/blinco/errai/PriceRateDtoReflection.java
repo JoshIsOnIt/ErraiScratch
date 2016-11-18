@@ -3,8 +3,8 @@ package com.blinco.errai;
 import java.math.BigDecimal;
 
 /**
- * This Reflection class should be created by an annotated processor, and would have
- * the added benefit of created publicly usable static final Strings for all
+ * This Reflection class should be created by an annotation processor, and would have
+ * the added benefit of creating publicly usable static final Strings for all
  * properties of the bean.
  * 
  * The motivation for creating this class is that it contains functionality that is
